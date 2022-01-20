@@ -1,7 +1,8 @@
 package question1;
 
 class Base {
-    final public void show() {
+    //The word "final" makes that it cannot be overridden.
+    public void show() {
         System.out.println("Base::show() called");
     }
 }

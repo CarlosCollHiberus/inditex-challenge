@@ -8,11 +8,12 @@ class Test{
                 System.out.println ("a[" + i + "]=" + a[i] + "n");
             }
         }
-        catch (Exception e){
-            System.out.println ("error = " + e);
-        }
-        /*catch (ArrayIndexOutOfBoundsException e){
+        //I changed the order
+        catch (ArrayIndexOutOfBoundsException e){
             System.out.println ("ArrayIndexOutOfBoundsException");
-        }*/
+        }
+        catch (Exception e) {
+            System.out.println("error = " + e);
+        }
     }
 }

@@ -1,11 +1,9 @@
 package question9;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class MaximumUsingStreamMain {
     public static void main(String args[]){
@@ -13,11 +11,13 @@ public class MaximumUsingStreamMain {
         List<Employee> employeeList = createEmployeeList();
         Iterator<Employee> iterator = employeeList.listIterator();
 
+        //This prints the list using a for loop.
         for(int i=0; i<employeeList.size()-1; i++) {
             System.out.print(employeeList.get(i).getName() + ", ");
         }
         System.out.println(employeeList.get(employeeList.size()-1).getName());
 
+        //This prints the list using iterators.
         while(iterator.hasNext()) {
             Employee current = iterator.next();
             if (iterator.hasNext() == true) {
@@ -27,6 +27,7 @@ public class MaximumUsingStreamMain {
             }
         }
 
+        //This prints the list using streams.
         String employeeListResult = employeeList
                 .stream()
                 .map(e -> e.getName())

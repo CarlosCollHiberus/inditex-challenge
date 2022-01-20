@@ -6,16 +6,24 @@ public class NextBiggerElement {
 
     public static void main(String args[]) {
 
-        ArrayList<Double> array = new ArrayList();
-        array.add(13.0);
-        array.add(7.0);
-        array.add(6.0);
-        array.add(12.0);
+        ArrayList<Integer> array1 = new ArrayList();
+        ArrayList<Integer> array2 = new ArrayList();
+        array1.add(4);
+        array1.add(5);
+        array1.add(2);
+        array1.add(25);
+        array2.add(13);
+        array2.add(7);
+        array2.add(6);
+        array2.add(12);
 
-        nextBiggerElement(array);
+        System.out.println("Result first array: ");
+        nextBiggerElement(array1);
+        System.out.println("Result second array: ");
+        nextBiggerElement(array2);
     }
 
-    public static void nextBiggerElement(ArrayList<Double> numberArray) {
+    public static void nextBiggerElement(ArrayList<Integer> numberArray) {
 
         Integer size = numberArray.size();
 

@@ -8,6 +8,7 @@ class Main{
 
     public static void main(String[] args) {
         Base x = new Base();
+        //This print "Derived" because it is instantiated as the Derived class.
         Base y = new Derived();
         Derived z = new Derived();
         DoPrint(x);

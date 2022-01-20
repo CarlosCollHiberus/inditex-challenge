@@ -1,0 +1,1 @@
+Correct answer: A. The constructor is called with a variable of the Complex class, therefore the constructor paints: "Copy constructor called"

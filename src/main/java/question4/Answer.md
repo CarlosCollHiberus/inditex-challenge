@@ -1,0 +1,1 @@
+Correct answer: B. the second loop doesn't modify the matrix.

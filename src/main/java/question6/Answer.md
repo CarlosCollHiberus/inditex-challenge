@@ -1,0 +1,1 @@
+Correct answer: A. This raise a Compiler error because the catch with generic exception catches the ArrayIndexOutOfBoundsException.
